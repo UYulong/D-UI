@@ -1,0 +1,13 @@
+{
+  "name": "@d-ui/hooks",
+  "version": "1.0.0",
+  "description": "D-UI composables",
+  "main": "index.ts",
+  "module": "index.ts",
+  "unpkg": "index.ts",
+  "jsdelivr": "index.js",
+  "types": "index.d.ts",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
