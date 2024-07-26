@@ -7,7 +7,7 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 import type { CSSProperties } from 'vue'
-import { useNameSpace } from '@d-ui/hooks/use-namespace'
+import { useNameSpace } from '@d-ui/hooks'
 import { iconProps } from './icon'
 
 defineOptions({
