@@ -1,6 +1,6 @@
 
 export const defaultNamespace = 'd'
-const statePrefix = 'is'
+const statePrefix = 'is-'
 
 const _bem = (namespace: string, block: string, blockSuffix: string, element: string, modifier: string) => {
   let cls = `${namespace}-${block}`

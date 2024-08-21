@@ -32,6 +32,10 @@ module.exports = {
             {
               text: 'Icon',
               link: '/component/icon'
+            },
+            {
+              text: 'Tree',
+              link: '/component/tree'
             }
           ]
         }

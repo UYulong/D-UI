@@ -1,5 +1,15 @@
 @use "mixins/mixins" as *;
 
+@keyframes transformLoading {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @include b(icon) {
   color: inherit;
   width: 1em;
@@ -8,4 +18,8 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+
+  svg.loading {
+    animation: transformLoading 1s linear infinite;
+  }
 }

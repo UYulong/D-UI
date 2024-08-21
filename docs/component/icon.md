@@ -42,7 +42,7 @@ import { Alarm, AirplaneOutline } from '@vicons/ionicons5'
 
 ### icon props
 
-| 名称  |      类型      |  默认值   |   说明   |
-| ----- | :------------: | :-------: | :------: |
-| color |     string     | undefined | 图标颜色 |
-| size  | number /string | undefined | 图标大小 |
+| 名称  |     类型      |  默认值   |   说明   |
+| ----- | :-----------: | :-------: | :------: |
+| color |    string     | undefined | 图标颜色 |
+| size  | number/string | undefined | 图标大小 |
