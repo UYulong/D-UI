@@ -1,15 +1,18 @@
 <template>
   <div :class="[ns.b()]">
-    <d-tree-node
-      v-for="node in flattenTree"
-      :key="node.id"
-      :node="node"
-      :expanded="isExpanded(node)"
-      :loading-keys="loadingKeysRef"
-      :selected-keys="selectedKeysRef"
-      @select="handleSelect"
-      @toggle="toggleExpand"
-    />
+    <DVirtualList :items="flattenTree" :remain="8" :size="32">
+      <template #default="{ node }">
+        <d-tree-node
+          :key="node.id"
+          :node="node"
+          :expanded="isExpanded(node)"
+          :loading-keys="loadingKeysRef"
+          :selected-keys="selectedKeysRef"
+          @select="handleSelect"
+          @toggle="toggleExpand"
+        />
+      </template>
+    </DVirtualList>
 
     <!-- 无数据 -->
     <div v-if="isEmpty" :class="ns.e('empty-block')">
@@ -34,6 +37,7 @@ import {
 } from './tree.type'
 import { useNameSpace } from '@d-ui/hooks'
 import DTreeNode from './tree-node.vue'
+import DVirtualList from '@d-ui/components/virtual-list'
 
 defineOptions({
   name: 'DTree'

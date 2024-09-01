@@ -33,7 +33,7 @@ import { Key, TreeNode, TreeOption } from '@d-ui/components/tree'
 function createData(level = 4, baseKey = ''): any {
   if (!level) return []
 
-  const arr = new Array(6 - level).fill(0)
+  const arr = new Array(20 - level).fill(0)
 
   return arr.map((_, index) => {
     const key = `${baseKey}${level}${index}`
